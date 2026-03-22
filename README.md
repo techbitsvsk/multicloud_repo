@@ -1,4 +1,4 @@
-# Iceberg Multi-Cloud Pipeline
+# Multi-Cloud Pipeline
 
 A single PySpark pipeline that ingests TPC-H `orders` and `lineitem` datasets through
 **Bronze → Silver → Gold** Iceberg tables. Runs unchanged on **AWS Glue**, **Microsoft Fabric**,
@@ -11,9 +11,6 @@ and **local Spark + MinIO**.
 **Prerequisites**: Java 17, Spark 3.5, Python 3.9+, Docker.
 
 ```powershell
-# 1. Clone and install
-git clone <repo-url> iceberg-pipeline
-cd iceberg-pipeline
 pip install -r requirements.txt
 
 # 2. Start MinIO
