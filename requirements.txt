@@ -1,0 +1,9 @@
+# Core — PySpark includes Spark SQL + Iceberg support via --packages at runtime
+pyspark==3.5.3
+
+# Testing
+pytest>=7.0,<9.0
+
+# Linting (optional)
+# ruff>=0.4
+# mypy>=1.10

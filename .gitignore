@@ -1,0 +1,55 @@
+# Environment & secrets
+.env
+*.env.local
+
+# Local environment setup scripts (contain credentials — use env.example as template)
+set_env.ps1
+set_env.bat
+set_env.cmd
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.eggs/
+*.egg
+.venv/
+venv/
+
+# Spark / Iceberg
+metastore_db/
+derby.log
+spark-warehouse/
+*.crc
+
+# Build artefacts
+pipeline_deps.zip
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Terraform
+terraform/.terraform/
+terraform/**/.terraform/
+*.tfstate
+*.tfstate.*
+.terraform.lock.hcl
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Ivy cache (Spark package downloads)
+.ivy2/
+
+# Pytest
+.pytest_cache/
+
+# Logs
+*.log
+pipeline.log
